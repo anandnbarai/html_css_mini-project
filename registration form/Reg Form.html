@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Registration Form</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+    <style>
+        body {
+            background: url('https://wallpapers.com/images/hd/think-about-coding-qlib86o7bz1fqbub.jpg');
+            background-size: cover;
+        }
+    </style>
+    <link rel="icon" href="online-form-icon.png" type="text/x-icon">
+</head>
+
+<body bgcolor="lightskyblue" style="color: white;">
+    <marquee behavior="slide">
+        <h1 style="color: yellow;"> <u> Registration From </u> </h1>
+    </marquee>
+    <form method="post">
+        <!-- <label title="firstname"> First Name* :</label> -->
+        <lable title="firstname">First Name</lable>
+        <input type="text" name="firstname" id="firstname" placeholder="Enter First Name" size="25px"
+            required>
+        <br><br>
+        <label title="Middle Name"> Middle Name* :</label>
+        <input type="text" name="middlename" placeholder="Enter Middle Name" size="25px" required>
+        <br><br>
+        <label title="Lasr Name"> Last Name* :</label>
+        <input type="text" name="lastname" placeholder="Enter Lastname" required>
+        <br><br>
+        <label> Course* : </label>
+        <select>
+            <option value="Select Language"></option>
+            <option value="PHP">PHP</option>
+            <option value="Python">Pyhton</option>
+            <option value="Ruby">Ruby</option>
+            <option value="R">R</option>
+            <option value="Java">Java</option>
+            <option value="Swift">Swift</option>
+        </select>
+        <br><br>
+        <label> Gender :</label>
+        <select>
+            <option value="Select Gender"></option>
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+            <option value="Other">Other</option>
+        </select>
+        <br><br>
+        <label title="Mobile Number"> Mobile Number* :</label>
+        <input type="Text" name="Mobile Number" placeholder="Mobile Number" size="12" minlength="10" maxlength="10"
+            required>
+        <br><br>
+        <label>Address :</label> <br>
+        <textarea style="resize: none;" cols="25" rows="5" name="Address" placeholder="Address" required>
+        </textarea>
+        <br><br>
+        <label title="Email ID"> Email* :</label>
+        <input type="text" name="Email" placeholder="Email" required>
+        <br><br>
+        <label> Password* :</label>
+        <input type="Password" name="Password" placeholder="Enter Password" minlength="8" required>
+        <br><br>
+        <label> Re-type Password* :</label>
+        <input type="Password" name="Re-type Password" placeholder="Enter Password" minlength="8" required>
+        <br><br>
+        <input type="Submit" name="Submit" value="Register">
+        <input type="Reset" name="Reset" value="Reset">
+    </form>
+</body>
+
+</html>
